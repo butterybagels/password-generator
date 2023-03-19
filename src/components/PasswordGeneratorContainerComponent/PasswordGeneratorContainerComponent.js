@@ -32,6 +32,12 @@ export default function PasswordGeneratorContainerComponent() {
         return '!@#$%^&*()'
     }
 
+    function handleCopy(e) {
+        e.preventDefault()
+        navigator.clipboard.writeText(generatedPassword)
+        setGeneratedPassword("")
+    }
+
     function handleLength(e) {
         setComplexityOptions((prevState) => ({
             ...prevState,
@@ -96,7 +102,7 @@ export default function PasswordGeneratorContainerComponent() {
             <div className="generator-container">
                 <form>
                     <input type="text" value={generatedPassword} disabled={true}/>
-                    <button className="btn btn-info">Copy</button><br />
+                    <button className="btn btn-info" onClick={(e) => handleCopy(e)}>Copy</button><br />
                     <input className="form-range" type="range" min="4" max="20" step="1" defaultValue={complexityOptions.length} onChange={(e) => handleLength(e)}/>
 
                     <div className="form-check form-switch">
