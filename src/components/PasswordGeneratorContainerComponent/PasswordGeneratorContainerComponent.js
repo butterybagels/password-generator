@@ -74,7 +74,6 @@ export default function PasswordGeneratorContainerComponent() {
     }
 
     function generatePassword(e, desiredLength, useUppercase, useLowercase, useNumbers, useSpecialCharacters) {
-
         e.preventDefault();
 
         let generatedPassword = ""
