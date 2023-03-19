@@ -33,13 +33,6 @@ export default function PasswordGeneratorContainerComponent() {
                     <label className="form-check-label" htmlFor="use-special-characters">Use special characters</label>
                     <input className="form-check-input" type="checkbox" id="use-special-characters"/>
                 </div>
-
-                {/*<label>Use lowercase letters</label>*/}
-                {/*<input type="checkbox"/><br/>*/}
-                {/*<label>Use numbers</label>*/}
-                {/*<input type="checkbox"/><br/>*/}
-                {/*<label>Use special characters</label>*/}
-                {/*<input type="checkbox"/>*/}
             </form>
         </div>
     )
