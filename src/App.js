@@ -2,10 +2,12 @@ import './App.css';
 import PasswordGeneratorContainerComponent
     from "./components/PasswordGeneratorContainerComponent/PasswordGeneratorContainerComponent";
 
+import GlobalStyles from "./components/styles/Global";
+
 function App() {
   return (
     <div className="App">
-        <h1>This is the password generator.</h1>
+        <GlobalStyles />
         <PasswordGeneratorContainerComponent />
     </div>
   );

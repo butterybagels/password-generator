@@ -1,13 +1,13 @@
-import './PasswordGenerator.css'
 import PasswordGeneratorFormComponent from "../PasswordGeneratorFormComponent/PasswordGeneratorFormComponent";
+import {StyledFormContainer} from "../styles/StyledFormContainer";
 
 export default function PasswordGeneratorContainerComponent() {
 
     return (
         <div className="container">
-            <div className="generator-container">
+            <StyledFormContainer>
                 <PasswordGeneratorFormComponent />
-            </div>
+            </StyledFormContainer>
         </div>
     )
 }

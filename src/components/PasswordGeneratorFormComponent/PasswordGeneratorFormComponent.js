@@ -99,11 +99,10 @@ export default function PasswordGeneratorFormComponent() {
         <form>
             <PasswordDisplayFieldComponent
                 generatedPassword={generatedPassword}
-                handleCopy={handleCopy}
-                length={complexityOptions.length}
-                handleLength={handleLength}/>
+                handleCopy={handleCopy} />
             <PasswordComplexityOptionsComponent
                 length={complexityOptions.length}
+                handleLength={handleLength}
                 handleUppercaseSelected={handleUppercaseSelected}
                 handleLowercaseSelected={handleLowercaseSelected}
                 handleNumbersSelected={handleNumbersSelected}
